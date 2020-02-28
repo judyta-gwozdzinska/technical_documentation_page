@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Documentation - Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<nav id="navbar">
+  <header>CSS Documentation</header>
+  <ul>
+    <a href="#Introduction" rel="internal">
+      <li>Introduction</li>
+    </a>
+    <a href="#CSS_Syntax" rel="internal">
+      <li>CSS Syntax</li>
+    </a>
+    <a href="#CSS_Selectors" rel="internal">
+      <li>CSS Selectors</li>
+    </a>
+    <a href="#CSS_Comments" rel="internal">
+      <li>CSS Comments</li>
+    </a>
+    <a href="#CSS_Colors" rel="internal">
+      <li>CSS Colors</li>
+    </a>
+    <a href="#CSS_Backgrounds" rel="internal">
+      <li>CSS Backgrounds</li>
+    </a>
+    <a href="#CSS_Margins" rel="internal">
+      <li>CSS Margins</li>
+    </a>
+    <a href="#CSS_Padding" rel="internal">
+      <li>CSS Padding</li>
+    </a>
+    <a href="#CSS_Display" rel="internal">
+      <li>CSS Display</li>
+    </a>
+    <a href="#Reference" rel="internal">
+      <li>Reference</li>
+    </a>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <h2>What is CSS?</h2>
+    <ul>
+      <li>CSS stands for Cascading Style Sheets</li>
+      <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+      <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+      <li>External stylesheets are stored in CSS files</li>
+    </ul>
+    <h2>Why Use CSS?</h2>
+    <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for
+      different devices and screen sizes.</p>
+    <h3>Example</h3>
+    <code>body {
+      background-color: lightblue;
+      }
+
+      h1 {
+      color: white;
+      text-align: center;
+      }
+
+      p {
+      font-family: verdana;
+      font-size: 20px;
+      }
+    </code>
+  </section>
+  <section class="main-section" id="CSS_Syntax">
+    <header>CSS Syntax</header>
+    <p>A CSS rule-set consists of a selector and a declaration block:</p>
+    <img src="https://www.w3schools.com/css/selector.gif">
+    <p>The selector points to the HTML element you want to style.</p>
+    <p>The declaration block contains one or more declarations separated by semicolons.</p>
+    <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+    <p>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+    <h3>Example</h3>
+    <p>In this example all elements will be center-aligned, with a red text color:</p>
+    <code>p {
+      color: red;
+      text-align: center;
+      }
+    </code>
+    <h3>Example Explained</h3>
+    <ul>
+      <li>p is a <b>selector</b> in CSS.</li>
+      <li>color is a property, and red is the property value</li>
+      <li>text-align is a property, and center is the property value</li>
+    </ul>
+  </section>
+  <section class="main-section" id="CSS_Selectors">
+    <header>CSS Selectors</header>
+    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+    <p>We can divide CSS selectors into five categories:</p>
+    <p>We can divide CSS selectors into five categories:</p>
+    <ul>
+      <li>Simple selectors (select elements based on name, id, class)</li>
+      <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+      <li>Pseudo-class selectors (select elements based on a certain state)</li>
+      <li>Pseudo-elements selectors (select and style a part of an element)</li>
+      <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+    </ul>
+  </section>
+  <section class="main-section" id="CSS_Comments">
+    <header>CSS Comments</header>
+    <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+    <p>Comments are ignored by browsers.</p>
+    <p>A CSS comment starts with /* and ends with */:</p>
+    <code> /* This is a single-line comment */
+      p {
+      color: red;
+      }
+    </code>
+    <p>You can add comments wherever you want in the code:</p>
+    <code>p {
+      color: red; /* Set text color to red */
+      }
+    </code>
+    <p>Comments can also span multiple lines: </p>
+    <code>/* This is
+      a multi-line
+      comment */
+
+      p {
+      color: red;
+      }
+    </code>
+  </section>
+  <section class="main-section" id="CSS_Colors">
+    <header>CSS Colors</header>
+    <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+    <h2>CSS Color Names</h2>
+    <p>In CSS, a color can be specified by using a color name:</p>
+    <div class="w3-row w3-center" style="margin:0 16px;line-height:60px;color:white;text-align:center; width: 50%;">
+      <div class="w3-col l3 m6 w3-padding">
+        <div style="background-color:tomato;">Tomato</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+        <div style="background-color:orange;">Orange</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+        <div style="background-color:dodgerblue;">DodgerBlue</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+        <div style="background-color:mediumseagreen;">MediumSeaGreen</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+        <div style="background-color:gray;">Gray</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+        <div style="background-color:slateblue;">SlateBlue</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+        <div style="background-color:violet;">Violet</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+        <div style="background-color:lightgray;color:#444444">LightGray</div>
+      </div>
+    </div>
+    <p>CSS/HTML support 140 standard color names.</p>
+    <h2>CSS Background Color</h2>
+    <p>You can set the background color for HTML elements:</p>
+    <div style="background-color:dodgerblue; text-align:center;color:white;font-size:24px;width:70%;">Hello World</div>
+    <br>
+    <div class="w3-container" style="background-color:tomato;color:white;width:70%;"><br>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.
+      Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+      commodo consequat.<br><br>
+    </div>
+    <div class="w3-example">
+      <h3>Example</h3>
+      <code>
+        <div class="w3-code notranslate htmlHigh"><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> style<span
+                class="attributevaluecolor" style="color:mediumblue">="background-color:DodgerBlue;"</span></span><span
+              class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          Hello World<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red">
+              style<span class="attributevaluecolor"
+                style="color:mediumblue">="background-color:Tomato;"</span></span><span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span>Lorem
+          ipsum...<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div>
+      </code>
+
+      <h2>CSS Border Color</h2>
+      <p>You can set the color of borders:</p>
+      <h2 style="border: 2px solid Violet;width:50%;">Hello World</h2>
+      <h2 style="border: 2px solid Tomato;width:50%;">Hello World</h2>
+      <h2 style="border: 2px solid DodgerBlue;width:50%;">Hello World</h2>
+      <div class="w3-example">
+        <h3>Example</h3>
+        <code>
+          <div class="w3-code notranslate htmlHigh"><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red">
+                style<span class="attributevaluecolor" style="color:mediumblue">="border:2px
+                  solid Tomato;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Hello
+            World<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red">
+                style<span class="attributevaluecolor" style="color:mediumblue">="border:2px
+                  solid DodgerBlue;"</span></span><span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Hello
+            World<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red">
+                style<span class="attributevaluecolor" style="color:mediumblue">="border:2px
+                  solid Violet;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Hello
+            World<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span> </div>
+        </code>
+  </section>
+  <section class="main-section" id="CSS_Backgrounds">
+    <header>CSS Backgrounds</header>
+    <p>The CSS background properties are used to define the background effects for elements.</p>
+    <p>In these chapters, you will learn about the following CSS background properties:</p>
+    <ul>
+      <li>background-color</li>
+      <li>background-image</li>
+      <li>background-repeat</li>
+    </ul>
+    <h2>CSS background-color</h2>
+    <p>The background-color property specifies the background color of an element.</p>
+    <h3>Example</h3>
+    <p>The background color of a page is set like this:</p>
+    <code>body {
+      background-color: lightblue;
+      }</code>
+    <p>With CSS, a color is most often specified by:</p>
+    <ul>
+      <li>a valid color name - like "red"</li>
+      <li>a HEX value - like "#ff0000"</li>
+      <li>an RGB value - like "rgb(255,0,0)"</li>
+    </ul>
+    <h2>CSS background-image</h2>
+    <p>The background-image property specifies an image to use as the background of an element.</p>
+    <p>By default, the image is repeated so it covers the entire element.</p>
+    <h3>Example</h3>
+    <code>body {
+      background-image: url("paper.gif");
+      }</code>
+    <h2>CSS background-repeat</h2>
+    <p>By default, the background-image property repeats an image both horizontally and vertically.</p>
+    <p>Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+    <h3>Example</h3>
+    <code>body {
+      background-image: url("gradient_bg.png");
+      }</code>
+    <p>If the image above is repeated only horizontally (background-repe
+      <h3>Example</h3>
+      <code>body {
+        background-image: url("gradient_bg.png");
+        background-repeat: repeat-x;
+        }</code>
+  </section>
+  <section class="main-section" id="CSS_Margins">
+    <header>CSS Margins</header>
+    <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+    <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an
+      element (top, right, bottom, and left).</p>
+    <p>CSS has properties for specifying the margin for each side of an element:</p>
+    <ul>
+      <li>margin-top</li>
+      <li>margin-right</li>
+      <li>margin-bottom</li>
+      <li>margin-left</li>
+    </ul>
+    <p>All the margin properties can have the following values:</p>
+    <ul>
+      <li>auto - the browser calculates the margin</li>
+      <li>length - specifies a margin in px, pt, cm, etc.</li>
+      <li>% - specifies a margin in % of the width of the containing element</li>
+      <li>inherit - specifies that the margin should be inherited from the parent element</li>
+    </ul>
+    <p><b>Tip:</b> Negative values are allowed.</p>
+    <h3>Example</h3>
+    <code>p {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-right: 150px;
+      margin-left: 80px;
+      }</code>
+  </section>
+  <section class="main-section" id="CSS_Padding">
+    <header>CSS Padding</header>
+    <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+    </p>
+    <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of
+      an element (top, right, bottom, and left).</p>
+    <ul>
+      <li>auto - the browser calculates the margin</li>
+      <li>length - specifies a margin in px, pt, cm, etc.</li>
+      <li>% - specifies a margin in % of the width of the containing element</li>
+      <li>inherit - specifies that the margin should be inherited from the parent element</li>
+    </ul>
+    <p><b>Note:</b> Negative values are not allowed.</p>
+    <h3>Example</h3>
+    <code>div {
+      padding-top: 50px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      padding-left: 80px;
+      }</code>
+  </section>
+  <section class="main-section" id="CSS_Display">
+    <header>CSS Display</header>
+    <p>The display property is the most important CSS property for controlling layout.</p>
+    <p>The display property specifies if/how an element is displayed.</p>
+    <p>Every HTML element has a default display value depending on what type of element it is. The default display value
+      for most elements is block or inline.</p>
+    <h2>Block-level Elements</h2>
+    <p>A block-level element always starts on a new line and takes up the full width available (stretches out to the
+      left and right as far as it can).</p>
+    <div class="w3-theme-border" style="border-width:3px;border-style:solid;width:50%">
+      The &lt;div&gt; element is a block-level element.</div>
+    <p>Examples of block-level elements:</p>
+    <ul>
+      <li>&lt;div&gt;</li>
+      <li>&lt;h1&gt; - &lt;h6&gt;</li>
+      <li>&lt;p&gt;</li>
+      <li>&lt;form&gt;</li>
+      <li>&lt;header&gt;</li>
+      <li>&lt;footer&gt;</li>
+      <li>&lt;section&gt;</li>
+    </ul>
+    <h2>Inline Elements</h2>
+    <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+    <p>Examples of inline elements:</p>
+    <ul>
+      <li>&lt;span&gt;</li>
+      <li>&lt;a&gt;</li>
+      <li>&lt;img&gt;</li>
+    </ul>
+    <h2>Display: none;</h2>
+    <p>display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them.
+      Take a look at our last example on this page if you want to know how this can be achieved.</p>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp"
+        target="_blank">W3SCHOOLS</a>.</li>
+  </section>
+</main>
